@@ -4,8 +4,11 @@ pipeline {
        stage('Build') {
              steps {
                  
-                 sh 'echo "Uploading content with AWS creds"'
-                 
+                 sh 'echo "Hello World"'
+                 sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                 '''
                  }
              }
         }
