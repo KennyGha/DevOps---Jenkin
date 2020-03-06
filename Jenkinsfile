@@ -4,7 +4,7 @@ pipeline {
        stage('Lint HTML') {
              steps{
                 
-                sh '{tidy -q -e /home/ubuntu/devops/static/index.html}'
+                script '{tidy -q -e /home/ubuntu/devops/static/index.html}'
            }   
        
        }
