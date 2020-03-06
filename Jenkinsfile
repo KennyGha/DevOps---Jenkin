@@ -8,7 +8,7 @@ pipeline {
            }   
        
        }
-       stage('Lint HTML') {    
+       stage('Upload to AWS') {    
              steps {
                  withAWS(region:'ap-northeast-1',credentials:'aws-static') {
                  sh 'echo "Uploading content with AWS creds"'
